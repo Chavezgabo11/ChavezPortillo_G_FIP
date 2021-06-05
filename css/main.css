@@ -1,0 +1,591 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+	font-family: 'Quicksand', sans-serif;
+	color: #333;
+}
+
+p
+{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+/*Site Container*/
+
+.siteContainer
+{
+	margin: 0 auto;
+	width: 1020px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#mainHeader
+{
+	margin-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+  justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+}
+
+#logo
+{
+	width: 250px;
+	height: 50px;
+}
+
+.navBar {
+	float: right;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	height: 50px;
+  	overflow: hidden;
+}
+
+/*Nav bar - Style */
+
+/*Id's*/
+
+.logo {
+	justify-content: center;
+	width: 250px;
+	height: 50px;
+}
+
+
+#mainNav
+{
+	width: 800px;
+}
+
+/*Classes*/
+
+.liNav {
+  float: right;
+  height: 50px;
+}
+
+
+.liNav .link {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  height: 50px;
+}
+
+
+.liNav .link:hover {
+  background-color: #ddd;
+}
+
+/*Footer - Style*/
+
+/*Id's*/
+
+#mainFooter
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+#footerNav
+{
+	width: 500px;
+
+}
+
+
+#footerNav h2
+{
+	font-size: 25px;
+}
+
+
+#footerNav a
+{
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+}
+
+
+#copyRight
+{
+
+	text-align: center;
+	margin-left: auto;
+	width: 310px;
+}
+
+/* Home, Index - Page */
+
+/*Id's*/
+
+#imageCoverContainer {
+	width: 1020px;
+	height: 600px;
+	margin-top: 10px;
+}
+
+#coverTextBold {
+  	margin-top: -200px;
+  	margin-left: 50px;
+  	font-size: 50px;
+  	color: #fff;
+
+}
+
+#coverText {
+    width: 950px;
+  	margin-top: 10px;
+  	margin-left: 50px;
+  	font-size: 25px;
+  	color: #fff;
+}
+
+#imageCover {
+  	width: 1020px;
+	  height: 600px;
+}
+
+
+#productInfo
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	margin-bottom: 40px;
+	border-radius: 15px;
+}
+
+#productInfo h4{
+	font-size: 20px;
+}
+
+#productInfo p, h4
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+#productInfoS
+{
+  height: 340px;
+  margin-left: -40px;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  justify-content: space-around;
+	border-radius: 15px;
+}
+
+#productInfoS h4{
+	font-size: 20px;
+}
+
+#productInfoS p, h4
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+
+/*Classes*/
+
+.TitleProductContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.ProductBold {
+  margin-left: 10px;
+	font-size: 40px;
+	width: 1020px;
+	font-weight: bold;
+}
+
+.ProductBoldS {
+  width: 100px;
+  margin-left: 10px;
+	margin-top: 5px;
+  margin-bottom: -90px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+
+.buyProduct {
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+}
+
+
+.imageLink:hover {
+	opacity: 0.5;
+}
+
+
+.priceText {
+	margin-top: 15px;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.productDesc
+{
+	width: 250px;
+	height: 500px;
+	text-align: center;
+}
+
+
+.productDesc h3
+{
+	text-align: center;
+}
+
+
+.productDesc img
+{
+	width: 200px;
+	height: 250px;
+  margin-bottom: -45px;
+  text-align: center;
+}
+
+
+.ProductSubContainer{
+  margin-top: -50px;
+  background-color: #999;
+  width: 240px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.ProductSubContainer h4{
+  padding-top: 95px;
+  margin-left: 20px;
+}
+
+.ProductSubContainer p{
+	padding-top: 10px;
+  margin-left: 20px;
+}
+
+
+.priceTag{
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+.productDescS
+{
+  margin-top: 20px;
+  width: 450px;
+	height: 500px;
+	text-align: right;
+}
+
+
+
+.productDescS img
+{
+	width: 230px;
+	height: 300px;
+  margin-left: 280px;
+  margin-bottom: -25px;
+}
+
+
+.ProductSubContainerS{
+  margin-top: -230px;
+  background-color: #999;
+  width: 490px;
+  height: 250px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.ProductSubContainerS p{
+	font-weight: normal;
+}
+
+.ProductSubContainerS h4{
+  padding-top: 95px;
+  margin-left: 20px;
+  text-align: left;
+	font-weight:500;
+}
+
+.left-text{
+  text-align: left;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.productBT {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 70px;
+    height: 20px;
+  	padding: 10px;
+  	border-radius: 12px;
+	  font-size: 20px;
+    text-align: center;
+  	background-color: #e8e8e8;
+  	text-decoration-color: white;
+  	color: #000;
+}
+
+
+.productBT a{
+	color: #000;
+}
+
+/* About Us - Page*/
+
+body
+{
+	font-family: 'Quicksand', sans-serif;
+	color: #333;
+}
+
+p
+{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*Id's*/
+
+#titleHeaderAbtTxt{
+	font-size: 25px;
+  text-align: left;
+}
+
+
+#imageHeaderAbt{
+	width: 1020px;
+	height: 600px;
+	border-radius: 15px;
+}
+
+
+#titleAbtTxt{
+	font-size: 25px;
+}
+
+#titleAbtTxtOA{
+	font-size: 25px;
+}
+
+#imageCoverContainerLS {
+	width: 1020px;
+	height: 600px;
+	margin-top: 10px;
+	font-family: 'Quicksand', sans-serif;
+	color: #333;
+}
+
+#coverTextBoldLS {
+    width: 1020px;
+  	margin-top: -400px;
+  	font-size: 50px;
+  	color: #fff;
+    text-align: center;
+}
+
+#coverTextLS {
+    width: 920px;
+  	margin-top: -20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  	font-size: 25px;
+  	color: #fff;
+    text-align: center;
+}
+
+#imageCoverLS {
+  	width: 1020px;
+	  height: 600px;
+}
+
+#imageCoverContainerOS {
+	width: 1020px;
+	height: 600px;
+  padding-top: 50px;
+}
+
+#coverTextBoldOS {
+    width: 1020px;
+  	margin-top: -400px;
+  	font-size: 50px;
+  	color: #fff;
+    text-align: center;
+}
+
+#coverTextOS {
+    width: 920px;
+  	margin-top: -20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  	font-size: 25px;
+  	color: #fff;
+    text-align: center;
+}
+
+#imageCoverOS {
+  	width: 1020px;
+	  height: 600px;
+}
+
+
+/*Classes*/
+
+.aboutContainer{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+
+.headerAbout{
+	margin-top: 20px;
+}
+
+
+.textAbout{
+	margin-top: 30px;
+  padding-top: 50px;
+  padding-left: 50px;
+	margin-bottom: -20px;
+	background-color: #999;
+	border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.textAbout img{
+	width: 200px;
+  height: 300px;
+  margin-left: 710px;
+  margin-top: -200px;
+}
+
+.AbtTxt{
+  width: 700px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+
+.desAbtContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 20px;
+}
+
+
+.desAbtLabel{
+	margin-top: 50px;
+	flex-direction: column;
+	width: 500px;
+	background-color: #2a6d89;
+	border-radius: 15px;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+.desAbtLabel p{
+	font-size: 15px;
+	padding: 20px;
+}
+
+
+.labelImg{
+	width: 500px;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.textAboutOA{
+  display: flex;
+  flex-direction: row;
+	margin-top: 30px;
+  padding-top: 10px;
+  padding-left: 50px;
+	margin-bottom: -20px;
+	background-color: #999;
+	border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.OAContainer{
+  margin-bottom: 50px;
+}
+
+.OAContainerAward{
+  flex-direction:row;
+  margin-top: 60px;
+  margin-left: 70px;
+}
+
+.Award1 {
+  width: 100px;
+  height: 100px;
+}
+
+.Award2 {
+  width: 100px;
+  height: 100px;
+}
+
+.Award3 {
+  width: 100px;
+  height: 100px;
+}
+
+.AbtTxtOA{
+  width: 500px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
