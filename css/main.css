@@ -5,6 +5,10 @@ body
 {
 	font-family: 'Quicksand', sans-serif;
 	color: #333;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
 }
 
 p
@@ -32,10 +36,14 @@ a {
 
 .siteContainer
 {
-	margin: 0 auto;
-	width: 1020px;
-	padding-left: 20px;
-	padding-right: 20px;
+	min-width: 375px;
+	max-width: 1200px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #mainHeader
@@ -50,12 +58,11 @@ a {
 
 #logo
 {
-	width: 250px;
+	width: 50px;
 	height: 50px;
 }
 
 .navBar {
-	float: right;
 	list-style-type: none;
   	margin: 0;
   	padding: 0;
@@ -76,7 +83,7 @@ a {
 
 #mainNav
 {
-	width: 800px;
+	width: 100%;
 }
 
 /*Classes*/
@@ -111,7 +118,7 @@ a {
 	margin-bottom: 40px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 
@@ -149,49 +156,104 @@ a {
 /*Id's*/
 
 #imageCoverContainer {
-	width: 1020px;
-	height: 600px;
+	width: 100%;
+	height: 300px;
 	margin-top: 10px;
 }
 
+#imageCoverContainer h3{
+	font-size: 20px;
+	color: white;
+}
+
+
 #coverTextBold {
-  	margin-top: -200px;
-  	margin-left: 50px;
+  	margin-top: -100px;
+  	margin-left: 10px;
   	font-size: 50px;
-  	color: #fff;
+  	color: white;
+		width: 90%;
 
 }
 
 #coverText {
-    width: 950px;
+    width: 90%;
   	margin-top: 10px;
-  	margin-left: 50px;
-  	font-size: 25px;
-  	color: #fff;
+  	margin-left: 10px;
+  	font-size: 15px;
+  	color: white;
+		font-weight: lighter;
 }
 
 #imageCover {
-  	width: 1020px;
-	  height: 600px;
+  	width: 100%;
+	  height: 300px;
 }
 
+#Large-can {
+		padding-bottom: 20px;
+		padding-left: 60px;
+		width: 170px;
+}
 
-#productInfo
-{
-	margin-top: 40px;
+#Molson-can {
+		width: 130px;
+}
+
+#special-edition {
+		padding-bottom: 20px;
+		padding-left: 70px;
+		width: 150px;
+}
+
+#Bottle-beer {
+		width: 70px;
+}
+
+#Bottle-beer-big {
+		width: 80px;
+}
+
+#six-pack {
+		width: 150px;
+}
+
+.productInfo{
+	margin-top: 10%;
+	width: 100%;
 	display: flex;
-	flex-direction: row;
-  justify-content: space-between;
-	border-bottom: solid 1px #DDD;
+	flex-direction: column;
+  justify-content: space-around;
 	margin-bottom: 40px;
 	border-radius: 15px;
 }
 
-#productInfo h4{
+.productInfo h4{
 	font-size: 20px;
 }
 
-#productInfo p, h4
+.productInfo p, h4
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+
+.productInfod{
+	margin-top: -5%;
+	display: flex;
+	flex-direction: column;
+  justify-content: space-around;
+	margin-bottom: 40px;
+	border-radius: 15px;
+}
+
+.productInfod h4{
+	font-size: 20px;
+}
+
+.productInfod p, h4
 {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -200,11 +262,10 @@ a {
 
 #productInfoS
 {
-  height: 340px;
-  margin-left: -40px;
-	margin-top: 40px;
+  height: 700px;
+	margin-top: 20px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
   justify-content: space-around;
 	border-radius: 15px;
 }
@@ -220,18 +281,24 @@ a {
 	text-align: left;
 }
 
+#productContainer {
+	display: flex;
+	flex-direction: column;
+}
 
 /*Classes*/
 
+
 .TitleProductContainer{
+	padding-top: 20px;
   display: flex;
   flex-direction: row;
 }
 
 .ProductBold {
   margin-left: 10px;
-	font-size: 40px;
-	width: 1020px;
+	font-size: 35px;
+	width: 75%;
 	font-weight: bold;
 }
 
@@ -239,7 +306,7 @@ a {
   width: 100px;
   margin-left: 10px;
 	margin-top: 5px;
-  margin-bottom: -90px;
+  margin-bottom: -35px;
 	font-size: 40px;
 	font-weight: bold;
 }
@@ -266,11 +333,23 @@ a {
 
 .productDesc
 {
-	width: 250px;
-	height: 500px;
+	margin: 0;
+	margin-left: 10px;
+	margin-bottom: 75px;
+	width: 90%;
+	height: 400px;
 	text-align: center;
 }
 
+.grid-layout {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-bottom: 20px;
+}
+.grid-layouth {
+	display: flex;
+	flex-direction: row;
+}
 
 .productDesc h3
 {
@@ -280,7 +359,7 @@ a {
 
 .productDesc img
 {
-	width: 200px;
+	width: 100%;
 	height: 250px;
   margin-bottom: -45px;
   text-align: center;
@@ -289,20 +368,26 @@ a {
 
 .ProductSubContainer{
   margin-top: -50px;
-  background-color: #999;
-  width: 240px;
-  height: 250px;
+	background-color: #FF7A7A;
+  width: 100%;
+  height: 280px;
   border-radius: 15px;
+	color: white;
 }
 
 .ProductSubContainer h4{
   padding-top: 95px;
-  margin-left: 20px;
+  padding-left: 20px;
+	padding-right: 20px;
+	font-size: 17px;
+	width: 90%;
+	text-align: left;
 }
 
 .ProductSubContainer p{
+	font-size: 16px;
 	padding-top: 10px;
-  margin-left: 20px;
+	margin-left: 10PX;
 }
 
 
@@ -317,8 +402,9 @@ a {
 
 .productDescS
 {
+	margin-left: 5%;
   margin-top: 20px;
-  width: 450px;
+  width: 90%;
 	height: 500px;
 	text-align: right;
 }
@@ -329,50 +415,74 @@ a {
 {
 	width: 230px;
 	height: 300px;
-  margin-left: 280px;
+  margin-left: 10%;
   margin-bottom: -25px;
 }
 
 
 .ProductSubContainerS{
   margin-top: -230px;
-  background-color: #999;
-  width: 490px;
+	background-color: #FF7A7A;
+  width: 100%;
   height: 250px;
   border-radius: 15px;
   text-align: left;
+	color: white;
 }
 
 .ProductSubContainerS h4{
   padding-top: 55px;
   margin-left: 20px;
+	width: 40%;
+	font-size: 15px;
   text-align: left;
 }
 
 .left-text{
+	margin-top: 2%;
   text-align: left;
-  width: 300px;
+  width: 40%;
   margin-left: 20px;
+	font-weight: lighter;
+	margin-bottom: 10px;
 }
 
 .productBT {
-    margin-top: 20px;
-    margin-left: 30px;
-    width: 70px;
-    height: 20px;
-  	padding: 10px;
-  	border-radius: 12px;
-	  font-size: 20px;
-    text-align: center;
-  	background-color: #e8e8e8;
-  	text-decoration-color: white;
-  	color: #000;
+  margin-left: 30px;
+  width: 70px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 12px;
+	font-size: 20px;
+  text-align: center;
+  background-color: #e8e8e8;
+  text-decoration-color: white;
+  color: #000;
 }
 
 
 .productBT a{
 	color: #000;
 }
+
+.productBTh {
+  margin-left: -15px;
+  width: 70px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 12px;
+	font-size: 20px;
+  text-align: center;
+  background-color: #e8e8e8;
+  text-decoration-color: white;
+  color: #000;
+}
+
+
+.productBTh a{
+	color: #000;
+}
+
 
 /* About Us - Page*/
 
@@ -392,7 +502,7 @@ a {
 
 
 #titleAbtTxt{
-	font-size: 25px;
+	font-size: 20px;
 }
 
 #titleAbtTxtOA{
@@ -400,63 +510,71 @@ a {
 }
 
 #imageCoverContainerLS {
-	width: 1020px;
-	height: 600px;
+	width: 100%;
+	height: 300px;
 	margin-top: 10px;
+	display: flex;
+	align-content: center;
 }
 
 #coverTextBoldLS {
-    width: 1020px;
-  	margin-top: -400px;
-  	font-size: 50px;
+    width: 90%;
+  	margin-top: -225px;
+		margin-left: 5%;
+  	font-size: 20px;
   	color: #fff;
     text-align: center;
 }
 
 #coverTextLS {
-    width: 920px;
-  	margin-top: -20px;
-    margin-left: 50px;
-    margin-right: 50px;
-  	font-size: 25px;
+    width: 90%;
+  	margin-top: -10px;
+    margin-left: 5%;
+    margin-right: 5%;
+  	font-size: 17px;
   	color: #fff;
     text-align: center;
 }
 
 #imageCoverLS {
-  	width: 1020px;
-	  height: 600px;
+  	width: 100%;
+	  height: 300px;
 }
 
 #imageCoverContainerOS {
-	width: 1020px;
-	height: 600px;
+	width: 100%;
+	height: 300px;
   padding-top: 50px;
 }
 
 #coverTextBoldOS {
-    width: 1020px;
-  	margin-top: -400px;
-  	font-size: 50px;
+    width: 100%;
+  	margin-top: -225px;
+  	font-size: 20px;
   	color: #fff;
     text-align: center;
 }
 
 #coverTextOS {
-    width: 920px;
-  	margin-top: -20px;
-    margin-left: 50px;
-    margin-right: 50px;
-  	font-size: 25px;
+    width: 90%;
+  	margin-top: -10px;
+    margin-left: 5%;
+    margin-right: 5%;
+  	font-size: 17px;
   	color: #fff;
     text-align: center;
 }
 
 #imageCoverOS {
-  	width: 1020px;
-	  height: 600px;
+  	width: 100%;
+	  height: 300px;
 }
 
+#AboutUsBeer {
+	padding: 10px;
+	margin-left: 60%;
+	width: 90px;
+}
 
 /*Classes*/
 
@@ -475,10 +593,9 @@ a {
 
 .textAbout{
 	margin-top: 30px;
-  padding-top: 50px;
-  padding-left: 50px;
+  padding: 15px;
 	margin-bottom: -20px;
-	background-color: #999;
+	background-color: #FF7A7A;
 	border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -486,14 +603,15 @@ a {
 .textAbout img{
 	width: 200px;
   height: 300px;
-  margin-left: 710px;
-  margin-top: -200px;
+  margin-left: -10%;
+  margin-top: -350px;
 }
 
 .AbtTxt{
-  width: 700px;
-	font-size: 20px;
+  width: 50%;
+	font-size: 17px;
 	margin-bottom: 5px;
+	margin-right: 0;
 }
 
 
@@ -535,9 +653,9 @@ a {
   flex-direction: row;
 	margin-top: 30px;
   padding-top: 10px;
-  padding-left: 50px;
+  padding-left: 15px;
 	margin-bottom: -20px;
-	background-color: #999;
+	background-color: #FF7A7A;
 	border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -547,27 +665,987 @@ a {
 
 .OAContainerAward{
   flex-direction:row;
-  margin-top: 60px;
-  margin-left: 70px;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 .Award1 {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .Award2 {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .Award3 {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 
 .AbtTxtOA{
-  width: 500px;
-	font-size: 20px;
+  width: 100%;
+	font-size: 17px;
 	margin-bottom: 5px;
+}
+
+/* Landing Page - Page */
+
+.landing-page {
+	background-color: #FF7A7A;
+	text-align: center;
+}
+
+#SectionLP {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+#HeaderLP {
+	color: white;
+	padding-top: 50%;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+#TextLP {
+	color: white;
+	width: 70%;
+	margin-top: 5%;
+	margin-left: 10%;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#province {
+	border: 1px solid gray;
+	margin-top: 5%;
+	width: 50%;
+	font-size: 15px;
+	padding: 6px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#MM, #DD, #YYYY {
+	border: 1px solid gray;
+	margin-top: 3%;
+	width: 13%;
+	font-size: 15px;
+	padding: 6px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.BtnLP {
+	margin-left: 36%;
+	margin-top: 3%;
+	width: 25%;
+	padding: 6px;
+	border-radius: 12px;
+	font-size: 17px;
+	text-align: center;
+	background-color: white;
+	text-decoration-color: white;
+	color: #000;
+}
+
+/* Product Page - Page */
+
+.siteContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.ProductBeer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#ProductBeerContainer {
+	margin-bottom: 5%;
+	display: flex;
+	flex-direction: row;
+	height: 400px;
+	width: 100%;
+	background-color: #FF7A7A;
+	border-radius: 0px 0px 25px 25px;
+}
+
+#ProductImg {
+	display: flex;
+	flex-direction: row;
+}
+
+#imagesSmall{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 10%;
+}
+
+#imagesSmall img {
+	margin-left: 80%;
+	border: 1px solid gray;
+	height: 80px;
+	width: 60px;
+}
+
+.imageBorderProduct{
+	border: solid 2px #a7a9ab;
+	border-radius: 10px;
+	margin: 5px;
+	width: 38px;
+	height: 50px;
+}
+
+#imageProductCover{
+	border: solid 1px #707070;
+	border-radius: 15px;
+	width: 150px;
+	height: 300px;
+	margin-top: 30%;
+}
+
+.imageProductBig {
+	border-radius: 15px;
+	width: 90px;
+	height: 300px;
+	margin-left: 10%;
+	margin-top: 35%;
+	padding: 10px;
+}
+
+#ProductTxt {
+	margin-top: 20%;
+	margin-left: 20%;
+}
+
+.CardPrice {
+	font-size: 40px;
+}
+
+.CardName{
+	margin-top: 5%;
+	font-size: 25px;
+}
+
+.bottomTxt{
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	margin-top: 5%;
+}
+
+
+.bottomTxtR {
+	margin-left: 15%;
+}
+
+.CardVolume, .CardAlcohol, .CardName {
+	font-weight: 900;
+}
+
+.CardVolumeTxt, .CardAlcoholTxt {
+	color: white;
+}
+
+.ProductTxtR {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 90%;
+}
+
+.ProductTxtR h2 {
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.topTxt {
+	margin-top: 10%;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.bottomTxt {
+	margin-top: 4%;
+	font-size: 20px;
+	font-weight: lighter;
+}
+
+.buyBtn {
+	margin-top: -10%;
+	margin-left: 50%;
+	width: 50px;
+	height: 20px;
+	padding: 10px;
+	border-radius: 12px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #e8e8e8;
+	text-decoration-color: white;
+	color: #000;
+}
+
+.buyBtn a{
+	color: black;
+}
+
+.buyBtnP {
+	margin-top: 10%;
+	margin-left: 0px;
+	width: 70px;
+	height: 20px;
+	padding: 10px;
+	border-radius: 12px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #e8e8e8;
+	text-decoration-color: white;
+	color: #000;
+}
+
+.buyBtnP a{
+	color: black;
+}
+
+#Large-canS {
+	margin-left: 1%;
+	padding: 0%;
+	width: 170px;
+}
+
+#special-editionS {
+		width: 150px;
+}
+
+
+/* MOBILE LAYOUT */
+
+@media screen and (min-width: 400px) {
+	/* Home, Index - Page */
+
+	/*Id's*/
+
+	#imageCoverContainer {
+		width: 100%;
+		height: 600px;
+		margin-top: 10px;
+	}
+
+	#imageCoverContainer h3{
+		color: white;
+	}
+
+
+	#coverTextBold {
+	  	margin-top: -150px;
+	  	margin-left: 50px;
+	  	font-size: 50px;
+			font-weight: 900;
+	  	color: white;
+			width: 90%;
+
+	}
+
+	#coverText {
+	    width: 90%;
+	  	margin-top: 10px;
+	  	margin-left: 50px;
+			font-weight: lighter;
+	  	font-size: 20px;
+	  	color: white;
+	}
+
+	#imageCover {
+	  	width: 100%;
+		  height: 600px;
+	}
+
+	#Large-can {
+			padding-bottom: 20px;
+			padding-left: 60px;
+			width: 170px;
+	}
+
+	#Molson-can {
+			width: 130px;
+	}
+
+	#special-edition {
+			padding-bottom: 20px;
+			padding-left: 70px;
+			width: 150px;
+	}
+
+	#Bottle-beer {
+			width: 70px;
+	}
+
+	#Bottle-beer-big {
+			width: 80px;
+	}
+
+	#six-pack {
+			width: 200px;
+	}
+
+	.productInfo{
+		margin-top: 0%;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	  justify-content: space-around;
+		margin-bottom: 40px;
+		border-radius: 15px;
+	}
+
+	.productInfo h4{
+		font-size: 20px;
+	}
+
+	.productInfo p, h4
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: left;
+	}
+
+
+	.productInfod{
+		margin-top: -5%;
+		display: flex;
+		flex-direction: row;
+	  justify-content: space-around;
+		margin-bottom: 40px;
+		border-radius: 15px;
+	}
+
+	.productInfod h4{
+		font-size: 20px;
+	}
+
+	.productInfod p, h4
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: left;
+	}
+
+	#productInfoS
+	{
+	  height: 340px;
+		margin-top: 40px;
+		display: flex;
+		flex-direction: row;
+	  justify-content: space-around;
+		border-radius: 15px;
+	}
+
+	#productInfoS h4{
+		font-size: 20px;
+	}
+
+	#productInfoS p, h4
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: left;
+	}
+
+
+	/*Classes*/
+
+	.TitleProductContainer{
+		padding-top: 20px;
+	  display: flex;
+	  flex-direction: row;
+	}
+
+	.ProductBold {
+	  margin-left: 10px;
+		font-size: 40px;
+		width: 1020px;
+		font-weight: bold;
+	}
+
+	.ProductBoldS {
+	  width: 100px;
+	  margin-left: 10px;
+		margin-top: 10px;
+	  margin-bottom: -90px;
+		font-size: 40px;
+		font-weight: bold;
+	}
+
+
+	.buyProduct {
+		margin: 0;
+	  	position: absolute;
+	  	top: 50%;
+	}
+
+
+	.imageLink:hover {
+		opacity: 0.5;
+	}
+
+
+	.priceText {
+		margin-top: 15px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+
+	.productDesc
+	{
+		width: 80%;
+		margin-left: 20px;
+		margin-top: 120px;
+		height: 350px;
+		text-align: center;
+	}
+
+
+	.productDesc h3
+	{
+		text-align: center;
+	}
+
+
+	.productDesc img
+	{
+		width: 100%;
+		height: 250px;
+	  margin-bottom: -45px;
+	  text-align: center;
+	}
+
+
+	.ProductSubContainer{
+	  margin-top: -50px;
+		background-color: #FF7A7A;
+	  width: 100%;
+	  height: 250px;
+	  border-radius: 15px;
+		color: white;
+	}
+
+	.ProductSubContainer h4{
+	  padding-top: 95px;
+	  margin-left: 10px;
+	}
+
+	.ProductSubContainer p{
+		padding-top: 10px;
+	  margin-left: 20px;
+	}
+
+
+	.priceTag{
+	  margin-top: -10px;
+	  margin-left: 20px;
+	  margin-bottom: 10px;
+	  font-size: 19px;
+	  font-weight: bold;
+	}
+
+
+	.productDescS
+	{
+	  margin: 20px;
+	  width: 45%;
+		height: 300px;
+		text-align: right;
+	}
+
+
+
+	.productDescS img
+	{
+		width: 230px;
+		height: 300px;
+	  margin-left: 10%;
+	  margin-bottom: -25px;
+	}
+
+
+	.ProductSubContainerS{
+	  margin-top: -230px;
+		background-color: #FF7A7A;
+	  width: 100%;
+	  height: 250px;
+	  border-radius: 15px;
+	  text-align: left;
+		color: white;
+	}
+
+	.ProductSubContainerS h4{
+	  padding-top: 55px;
+	  margin-left: 20px;
+	  text-align: left;
+	}
+
+	.left-text{
+		margin-top: 2%;
+	  text-align: left;
+	  width: 60%;
+	  margin-left: 20px;
+		margin-bottom: 10px;
+	}
+
+	.productBT {
+	  margin-left: 30px;
+	  width: 70px;
+	  height: 20px;
+	  padding: 10px;
+	  border-radius: 12px;
+		font-size: 20px;
+	  text-align: center;
+	  background-color: #e8e8e8;
+	  text-decoration-color: white;
+	  color: #000;
+	}
+
+
+	.productBT a{
+		color: #000;
+	}
+
+	/* About Us - Page*/
+
+	/*Id's*/
+
+	#titleHeaderAbtTxt{
+		font-size: 25px;
+	  text-align: left;
+	}
+
+
+	#imageHeaderAbt{
+		width: 1020px;
+		height: 600px;
+		border-radius: 15px;
+	}
+
+
+	#titleAbtTxt{
+		font-size: 25px;
+	}
+
+	#titleAbtTxtOA{
+		font-size: 25px;
+	}
+
+	#imageCoverContainerLS {
+		width: 100%;
+		height: 600px;
+		margin-top: 10px;
+		display: flex;
+		align-content: center;
+	}
+
+	#coverTextBoldLS {
+	    width: 90%;
+	  	margin-top: -400px;
+			margin-left: 5%;
+	  	font-size: 50px;
+	  	color: #fff;
+	    text-align: center;
+	}
+
+	#coverTextLS {
+	    width: 90%;
+	  	margin-top: -20px;
+	    margin-left: 5%;
+	    margin-right: 5%;
+	  	font-size: 25px;
+	  	color: #fff;
+	    text-align: center;
+	}
+
+	#imageCoverLS {
+	  	width: 100%;
+		  height: 600px;
+	}
+
+	#imageCoverContainerOS {
+		width: 100%;
+		height: 600px;
+	  padding-top: 50px;
+	}
+
+	#coverTextBoldOS {
+	    width: 100%;
+	  	margin-top: -400px;
+	  	font-size: 50px;
+	  	color: #fff;
+	    text-align: center;
+	}
+
+	#coverTextOS {
+	    width: 90%;
+	  	margin-top: -20px;
+	    margin-left: 5%;
+	    margin-right: 5%;
+	  	font-size: 25px;
+	  	color: #fff;
+	    text-align: center;
+	}
+
+	#imageCoverOS {
+	  	width: 100%;
+		  height: 600px;
+	}
+
+	#AboutUsBeer {
+		padding: 10px;
+		margin-left: 80%;
+		width: 90px;
+	}
+
+	/*Classes*/
+
+	.aboutContainer{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		color: #fff;
+	}
+
+
+	.headerAbout{
+		margin-top: 20px;
+	}
+
+
+	.textAbout{
+		margin-top: 30px;
+	  padding-top: 50px;
+	  padding-left: 50px;
+		margin-bottom: -20px;
+		background-color: #FF7A7A;
+		border-top-right-radius: 15px;
+	  border-bottom-left-radius: 15px;
+	}
+
+	.textAbout img{
+		width: 200px;
+	  height: 300px;
+	  margin-left: 710px;
+	  margin-top: -200px;
+	}
+
+	.AbtTxt{
+	  width: 70%;
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+
+
+	.desAbtContainer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-bottom: solid 1px #DDD;
+		padding-bottom: 20px;
+	}
+
+
+	.desAbtLabel{
+		margin-top: 50px;
+		flex-direction: column;
+		width: 500px;
+		background-color: #2a6d89;
+		border-radius: 15px;
+		color: #fff;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+
+	.desAbtLabel p{
+		font-size: 15px;
+		padding: 20px;
+	}
+
+
+	.labelImg{
+		width: 500px;
+		border-top-left-radius: 14px;
+		border-top-right-radius: 14px;
+	}
+
+	.textAboutOA{
+	  display: flex;
+	  flex-direction: row;
+		margin-top: 30px;
+	  padding-top: 10px;
+	  padding-left: 50px;
+		margin-bottom: -20px;
+		background-color: #FF7A7A;
+		border-top-right-radius: 15px;
+	  border-bottom-left-radius: 15px;
+	}
+	.OAContainer{
+	  margin-bottom: 50px;
+	}
+
+	.OAContainerAward{
+	  flex-direction:row;
+	  margin-top: 20px;
+	  margin-left: 70px;
+	}
+
+	.Award1 {
+	  width: 100px;
+	  height: 100px;
+	}
+
+	.Award2 {
+	  width: 100px;
+	  height: 100px;
+	}
+
+	.Award3 {
+	  width: 100px;
+	  height: 100px;
+	}
+
+	.AbtTxtOA{
+	  width: 100%;
+		font-size: 20px;
+		margin-bottom: 5px;
+	}
+
+	/* Landing Page - Page */
+
+	.landing-page {
+		background-color: #FF7A7A;
+		text-align: center;
+	}
+
+	#SectionLP {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+	}
+
+	#HeaderLP {
+		color: white;
+		padding-top: 20%;
+		font-size: 50px;
+		font-weight: 900;
+	}
+
+	#TextLP {
+		color: white;
+		padding-top: 5%;
+		font-size: 30px;
+		font-weight: normal;
+	}
+
+	#province {
+		border: 1px solid gray;
+		margin-top: 5%;
+		width: 40%;
+		font-size: 15px;
+		padding: 6px;
+		border-radius: 20px;
+		text-align: center;
+	}
+
+	#MM, #DD, #YYYY {
+		border: 1px solid gray;
+		margin-top: 1%;
+		width: 12%;
+		font-size: 15px;
+		padding: 6px;
+		border-radius: 20px;
+		text-align: center;
+	}
+
+	.BtnLP {
+		margin-left: 37%;
+		margin-top: 3%;
+		width: 25%;
+		padding: 6px;
+		border-radius: 12px;
+		font-size: 20px;
+		text-align: center;
+		background-color: white;
+		text-decoration-color: white;
+		color: #000;
+	}
+
+	/* Product Page - Page */
+
+	.siteContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.ProductBeer {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	#ProductBeerContainer {
+		margin-top: 5%;
+		margin-bottom: 5%;
+		display: flex;
+		flex-direction: row;
+		margin-left: 2%;
+		height: 400px;
+		width: 60%;
+		background-color: #FF7A7A;
+		border-radius: 25px;
+	}
+
+	#ProductImg {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#imagesSmall{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-top: 10%;
+	}
+
+	#imagesSmall img {
+		margin-left: 80%;
+		border: 1px solid gray;
+		height: 80px;
+		width: 60px;
+	}
+
+	.imageBorderProduct{
+		display: inline;
+		border: solid 2px #a7a9ab;
+		border-radius: 10px;
+		margin: 5px;
+		width: 38px;
+		height: 50px;
+	}
+	#imageProductCover{
+		border: solid 1px #707070;
+		border-radius: 15px;
+		width: 150px;
+		height: 300px;
+		margin-top: 30%;
+	}
+
+	.imageProductBig {
+		border: solid 2px #a7a9ab;
+		border-radius: 15px;
+		width: 90px;
+		height: 300px;
+		margin-left: 60%;
+		margin-top: 35%;
+		padding: 10px;
+	}
+
+	#ProductTxt {
+		margin-top: 20%;
+		margin-left: 20%;
+	}
+
+	.CardPrice {
+		font-size: 40px;
+	}
+
+	.CardName{
+		margin-top: 5%;
+		font-size: 25px;
+	}
+
+	.bottomTxt{
+		display: flex;
+		flex-direction: row;
+		font-size: 20px;
+		margin-top: 5%;
+	}
+
+
+	.bottomTxtR {
+		margin-left: 15%;
+	}
+
+	.CardVolume, .CardAlcohol, .CardName {
+		font-weight: 900;
+	}
+
+	.ProductTxtR {
+		display: flex;
+		flex-direction: column;
+		margin-top: 15%;
+		margin-left: 3%;
+		width: 40%;
+	}
+
+	.ProductTxtR h2 {
+		font-size: 25px;
+		font-weight: 900;
+	}
+
+	.topTxt {
+		margin-top: 10%;
+		font-size: 20px;
+		font-weight: lighter;
+	}
+
+	.bottomTxt {
+		margin-top: 4%;
+		font-size: 20px;
+		font-weight: lighter;
+	}
+
+	.buyBtn {
+		margin-top: -10%;
+		margin-left: 75%;
+		width: 70px;
+		height: 20px;
+		padding: 10px;
+		border-radius: 12px;
+		font-size: 20px;
+		text-align: center;
+		background-color: #e8e8e8;
+		text-decoration-color: white;
+		color: #000;
+	}
+
+	.buyBtn a{
+		color: black;
+	}
+
+	#Large-canS {
+		margin-left: 1%;
+		padding: 0%;
+		width: 170px;
+	}
+
+	#special-editionS {
+			width: 150px;
+	}
+
+	.grid-layout {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+	}
+
+	.grid-layouth {
+		display: flex;
+		flex-direction: row;
+	}
+
 }
