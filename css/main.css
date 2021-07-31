@@ -1484,6 +1484,11 @@ a {
 		text-decoration-color: white;
 		color: #000;
 	}
+	
+	.BtnLP a {
+		color: black;
+	}
+
 
 	/* Product Page - Page */
 
