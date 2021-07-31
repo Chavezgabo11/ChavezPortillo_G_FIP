@@ -1,5 +1,5 @@
-# Midterm Assignment on GitHub
-This is an assignment from Fanshawe College.
+# Gold Bond Web Page
+This is a web page project for Gold Bond brand.
 
 ## About the product
 Is a website for sell products of Gold Bond a brewery.
